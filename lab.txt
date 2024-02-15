@@ -1,0 +1,46 @@
+UPDATE PARTICIPATED
+SET damage_amount = 25000
+WHERE regno = '122' AND report_number = 892;
+
+delete from participated where report_number in (select report_number from accident where extract (year from accd_date) = 2024);
+
+alter table person add email varchar(50);
+
+alter table person drop column email;
+
+ ALTER TABLE CAR
+ ADD CONSTRAINT check_year CHECK (Year >= 2000);
+--------------------------------------------------------------------
+SELECT
+    CUSTOMER.cname AS CUSTNAME,
+    COUNT(ORDERS.order#) AS "No. of Orders",
+    AVG(ORDERS.ordamt) AS AVG_ORDER_AMT
+FROM
+    CUSTOMER
+JOIN
+    ORDERS ON CUSTOMER.cust# = ORDERS.cust#
+GROUP BY
+    CUSTOMER.cname;
+
+------------------------------------------------------------------------
+SELECT
+    SHIPMENT.order#
+FROM
+    SHIPMENT
+JOIN
+    WAREHOUSE ON SHIPMENT.warehouse# = WAREHOUSE.warehouse#
+WHERE
+    WAREHOUSE.city = 'New York'
+GROUP BY
+    SHIPMENT.order#
+HAVING
+    COUNT(DISTINCT SHIPMENT.warehouse#) = (SELECT COUNT(*) FROM WAREHOUSE WHERE city = 'New York');
+
+------------------------------------------------------------------------
+UPDATE ORDERS
+SET ordamt = ordamt * 
+    CASE
+        WHEN (SELECT SUM(qty) FROM ORDER_ITEMS WHERE ORDER_ITEMS.order# = ORDERS.order#) > 10 THEN 0.90
+        ELSE 0.95
+    END
+
