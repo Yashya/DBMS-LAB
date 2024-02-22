@@ -1,0 +1,4 @@
+D:\220911031\lab\Connection\Connection\bin\x64\Debug\Connection.exe.config
+D:\220911031\lab\Connection\Connection\obj\x64\Debug\Connection.Form1.resources
+D:\220911031\lab\Connection\Connection\obj\x64\Debug\Connection.Properties.Resources.resources
+D:\220911031\lab\Connection\Connection\obj\x64\Debug\Connection.csproj.GenerateResource.Cache
