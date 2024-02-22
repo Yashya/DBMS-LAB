@@ -46,5 +46,17 @@ namespace Registration_Form
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 obj = new Form2();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

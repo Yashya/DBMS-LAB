@@ -7,3 +7,6 @@ D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_For
 D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_Form.csproj.GenerateResource.Cache
 D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_Form.exe
 D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_Form.pdb
+D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_Form.Form2.resources
+D:\220911031\lab1\Registration_Form\Registration_Form\bin\Debug\Oracle.DataAccess.dll
+D:\220911031\lab1\Registration_Form\Registration_Form\obj\Debug\Registration_Form.Form3.resources
